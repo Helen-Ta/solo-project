@@ -1,6 +1,6 @@
 const path = require('path');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
-const webpack = require('webpack');
+// const webpack = require('webpack');
 // const REACT_APP_GOOGLE_MAPS_API_KEY = require('./src/.env.local');
 
 module.exports = {
@@ -15,9 +15,9 @@ module.exports = {
         new HTMLWebpackPlugin({
             template: './src/index.html'
         }),
-        new webpack.DefinePlugin({
-            'process.env.NODE_ENV': JSON.stringify('development'),
-        }),
+        // new webpack.DefinePlugin({
+        //     'process.env.REACT_APP_GOOGLE_MAPS_API_KEY':JSON.stringify(process.env.REACT_APP_GOOGLE_MAPS_API_KEY),
+        // }),
     ],
     devServer: {
         host: 'localhost',

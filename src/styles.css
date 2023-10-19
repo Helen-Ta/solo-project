@@ -1,9 +1,18 @@
-/* .box {
+.box {
+    margin-top: -5px;
     text-align: center;
     position: relative;
-} */
+    border: 1px solid black;
+}
+
+.destination {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin-left: 575px;
+}
 
 .map-container {
-    height: 100vh;
+    height: 95vh;
     width: 100%;
 }
